@@ -94,41 +94,6 @@ curl -X POST http://localhost:8080/smartcampus-api/api/v1/sensors \
   -d "{\"id\":\"TEMP-002\",\"type\":\"Temperature\",\"status\":\"ACTIVE\",\"currentValue\":20,\"roomId\":\"INVALID\"}"
 ```
 
----
-# Project Structure
-scfinal/
-├── pom.xml
-└── src/main/java/com/smartcampus/
-    ├── Main.java
-    ├── JsonUtil.java
-    ├── model/
-    │   ├── Room.java
-    │   ├── Sensor.java
-    │   └── SensorReading.java
-    ├── store/
-    │   └── DataStore.java
-    ├── resource/
-    │   ├── DiscoveryResource.java
-    │   ├── RoomResource.java
-    │   ├── SensorResource.java
-    │   └── SensorReadingResource.java
-    ├── exception/
-    │   ├── RoomNotEmptyException.java
-    │   ├── LinkedResourceNotFoundException.java
-    │   └── SensorUnavailableException.java
-    ├── mapper/
-    │   ├── RoomNotEmptyExceptionMapper.java
-    │   ├── LinkedResourceNotFoundExceptionMapper.java
-    │   ├── SensorUnavailableExceptionMapper.java
-    │   └── GlobalExceptionMapper.java
-    └── filter/
-        └── LoggingFilter.java
-        └── webapp/
-        └── WEB-INF/
-        └── web.xml
-
----
-
 ## HTTP Status Codes
 
 | Code | Meaning | When Used |
