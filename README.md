@@ -95,39 +95,37 @@ curl -X POST http://localhost:8080/smartcampus-api/api/v1/sensors \
 ```
 
 ---
-
-## Project Structure
-project/
+# Project Structure
+scfinal/
 ├── pom.xml
-└── src/main/
-├── java/com/smartcampus/
-│   ├── SmartCampusApplication.java
-│   ├── JsonUtil.java
-│   ├── model/
-│   │   ├── Room.java
-│   │   ├── Sensor.java
-│   │   └── SensorReading.java
-│   ├── store/
-│   │   └── DataStore.java
-│   ├── resource/
-│   │   ├── DiscoveryResource.java
-│   │   ├── RoomResource.java
-│   │   ├── SensorResource.java
-│   │   └── SensorReadingResource.java
-│   ├── exception/
-│   │   ├── RoomNotEmptyException.java
-│   │   ├── LinkedResourceNotFoundException.java
-│   │   └── SensorUnavailableException.java
-│   ├── mapper/
-│   │   ├── RoomNotEmptyExceptionMapper.java
-│   │   ├── LinkedResourceNotFoundExceptionMapper.java
-│   │   ├── SensorUnavailableExceptionMapper.java
-│   │   └── GlobalExceptionMapper.java
-│   └── filter/
-│       └── LoggingFilter.java
-└── webapp/
-└── WEB-INF/
-└── web.xml
+└── src/main/java/com/smartcampus/
+    ├── Main.java
+    ├── JsonUtil.java
+    ├── model/
+    │   ├── Room.java
+    │   ├── Sensor.java
+    │   └── SensorReading.java
+    ├── store/
+    │   └── DataStore.java
+    ├── resource/
+    │   ├── DiscoveryResource.java
+    │   ├── RoomResource.java
+    │   ├── SensorResource.java
+    │   └── SensorReadingResource.java
+    ├── exception/
+    │   ├── RoomNotEmptyException.java
+    │   ├── LinkedResourceNotFoundException.java
+    │   └── SensorUnavailableException.java
+    ├── mapper/
+    │   ├── RoomNotEmptyExceptionMapper.java
+    │   ├── LinkedResourceNotFoundExceptionMapper.java
+    │   ├── SensorUnavailableExceptionMapper.java
+    │   └── GlobalExceptionMapper.java
+    └── filter/
+        └── LoggingFilter.java
+        └── webapp/
+        └── WEB-INF/
+        └── web.xml
 
 ---
 
